@@ -3,27 +3,30 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Chivo Mono', monospace;
 }
 body{
+    font-family: 'Chivo Mono', monospace;
     background-color: black;
 }
 .container{
-    justify-content: center;
-    margin: 0;
     display: flex;
-    height: 100vh;
-    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inner-container{
+    width: 50%;
+    padding: 40px;
+    background-image:  linear-gradient(to right, #353A3E, #233444);
 }
 h1{
     font-size: 70px;
     color: #CA9C7B;
     text-transform: uppercase;
 }
-.inner-container{
+h2{
+    color: #714529;
     width: 50%;
-    padding: 40px;
-    background-image:  linear-gradient(to right, #353A3E, #233444);
 }
 p{
     font-size: 20px;
@@ -51,6 +54,9 @@ p{
     width: 52%;
     height: 62px;
     transition: 1s;
+    background-color: #A57B58;
+    color: #233444;
+    font-weight: 700;
 }
 .date{
     font-weight: 100;
@@ -58,7 +64,14 @@ p{
     font-size: 20px;
     color: #714529;
 }
-img{
+figure{
+    width: 50%;
     height: 100%;
-    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+@media screen and (max-width: 1024px) {
+    .button a {
+      font-size: 16px;
+    }
+  }
