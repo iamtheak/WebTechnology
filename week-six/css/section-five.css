@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;400;700;&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Chivo Mono', monospace;
+}
+.container{
+    display: flex ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-col{
+    width: 50%;
+    height: 100vh;
+    padding: 2%;
+    background-image:  linear-gradient(to right, #353A3E, #233444);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h1{
+    font-size: 70px;
+    color: #CA9C7B;
+    text-transform: uppercase;
+}
+.contact, .location{
+    font-weight: 500;
+    font-size: 30px;
+    color: #714529;
+}
+.button{
+    margin: 10px;
+    display: flex;
+    background-color: #233444;
+    width: 40%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #CA9C7B;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.button a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    font-size: 20px;
+}
+.button:hover{
+    transition: 1s;
+    color: #233444;
+    background-color: #CA9C7B;
+}
+.right-col{
+    width: 50%;
+    height: 100vh;
+}
+figure{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media screen and (max-width: 1024px) {
+    .button a {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .left-col,
+    .right-col {
+      width: 100%;
+    }
+    .right-col{
+        background-color: #233444;
+    }
+    figure {
+      height: 300px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    .location,
+    .contact p{
+        font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .location,
+    .contact
+    p{
+        font-size: 14px;
+    }
+    .button a {
+        text-align: center;
+        font-size: 10px;
+    }
+  }

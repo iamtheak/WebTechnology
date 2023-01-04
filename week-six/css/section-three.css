@@ -5,5 +5,103 @@
     padding:0;
 }
 body{
-    font-family: "Chivo Mono";
+    font-family: "Chivo Mono",monospace;
+    background-image: linear-gradient(36deg,#A10fff,#19fcfedd);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    color: white;
 }
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 30px;
+}
+.container{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    width: 100vw;
+    height: 100vh;
+}
+.upper-row{
+    width: 100%;
+    height:15vh;
+    margin: 10px;
+}
+.lower-row{
+    height: 50%;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+}
+figcaption{
+    margin: 10px auto;
+    pad: 5px auto;
+}
+figcaption p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+img{
+    width: 350px;
+    height: 350px;
+}
+.date{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+    .upper-row{
+        height: 20vh;
+    }
+    h1{
+        font-size:50px ;
+    }
+    h2{
+        font-size: 20px;
+    }
+    img{
+        width: 250px;
+        height: 250px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .images{
+        flex-direction: column;
+    }
+    .upper-row{
+        height: 5vh;
+    }
+    h1{
+        font-size: 40px;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    h1{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .date{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+  }
+
