@@ -36,7 +36,7 @@ h2{
 }
 .images{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 figcaption{
     margin: 10px auto;

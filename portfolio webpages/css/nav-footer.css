@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script:wght@700&family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+:root{
+    --default-color: rgb(26, 20, 35);
+    --background-color: rgb(61, 49, 74);
+    --font-color: rgb(219, 170, 152);
+    --another-purple: rgb(133, 91, 110);
+    --box-color: rgb(150, 112, 91);
+}
+html{
+    position: relative;
+    min-width: 100%;
+}
+nav{
+    color: var(--font-color);
+    width: 100%;
+    max-height: 75px;
+    background-color: var(--default-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8%;
+    padding-right: 3%; 
+
+}
+.logo{
+    font-size: 30px;
+    font-family: 'Dancing Script', monospace;
+}
+nav ol li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav #links ol li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: all .4 ease-in-out;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+nav ol li a:after{
+    content: '';
+    position: absolute;
+    background-color: var(--another-purple);
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: all 0.4s ease-in-out;
+}
+nav #links ol li a:hover{
+    font-size: 150%;
+    color: var(--box-color);
+}
+nav ol li a:hover:after{
+    width: 100%;
+}
+.mode{
+    cursor: pointer;
+}
+footer{
+    color: var(--font-color);
+    bottom: 0;
+    position: fixed;
+    font-size: 14px;
+    background-color: var(--default-color);
+    min-height: 4vh;
+    max-height: 25px;
+    width: 100vw;
+    display: block;
+    padding: 10px;
+}
+footer p{
+    display: inline-block;
+}
+footer  a{
+    float: right;
+    color: inherit;
+}
+   @media screen and (max-width: 768px) {
+   header nav #links ol li a{
+    font-size: 90%;
+   }
+   header nav .logo{
+    font-size: 20px;
+   }
+   footer{
+    font-size: 12px;
+   }
+   }
+   
+   @media  screen and (max-width: 425px) {
+    #links {
+      display: none;
+    }
+    header nav #links ol li a{
+        font-size: 50%;
+       }
+    .show {
+      display: block;
+    }
+    footer{
+        font-size: 10px;
+       }
+  }
+ 
+  .icon {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media  screen and (max-width: 425px) {
+    .icon {
+      display: block;
+    }
+  }

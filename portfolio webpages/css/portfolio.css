@@ -1,0 +1,109 @@
+@import url('nav-footer.css');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans',monospace;
+}
+body{
+    
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+main{
+    color: var(--default-color);
+}
+.container{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+main .container .projects{
+    max-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,auto));
+    grid-gap: 10px;
+}
+h2{
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+.hangman,
+.tictactoe,
+.ceasercipher,
+.crudproject,
+.snakegame,
+.opensource{
+    transition: all .5s ease-in-out;
+    background-color: var(--box-color);
+    padding: 2%;
+    border-radius:  5px;
+    background-color: rgb(229, 212, 179);
+}
+.hangman:hover{
+    box-shadow: 0px 2px 20px 8px rgb(150, 112, 91); 
+    
+}
+.tictactoe:hover{
+    box-shadow: 0px 2px 20px 8px rgb(150, 112, 91); 
+   
+}
+.ceasercipher:hover{
+    box-shadow: 0px 2px 20px 8px rgb(150, 112, 91); 
+
+}
+.crudproject:hover{
+    box-shadow: 0px 2px 20px 8px rgb(150, 112, 91); 
+    
+}
+.snakegame:hover{
+    box-shadow: 0px 2px 20px 8px rgb(150, 112, 91); 
+    
+}
+.opensource:hover
+{
+    box-shadow: 0px 2px 20px 8px rgb(150, 112, 91); 
+}
+h3{
+    margin-top: 10px;
+}
+.snakegame h3{
+    margin-top: 40px;
+}
+.opensource h3{
+    color: var(--default-color);
+}
+@media screen and (max-width: 1024px) {
+
+    .container .projects img{
+        height: 50%;
+        width: 50%;
+    }
+    .container .projects
+    {
+        grid-template-columns: repeat(auto-fit, minmax(100px,auto));
+    }
+    .container .projects .opensource img{
+        height: auto;
+        width: 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    img{
+        height: auto;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 426px) {
+    h2{
+        font-size: 30px;
+    }
+    img{
+        height: auto;
+        width: 40%;
+    }
+}
